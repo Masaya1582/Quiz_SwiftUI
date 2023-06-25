@@ -15,15 +15,19 @@ struct HomeView: View {
 
     var body: some View {
         NavigationStack(path: $navigationManager.path) {
-            VStack {
-                Text("SwiftUIクイズ")
-                    .font(.custom(FontFamily.Caprasimo.regular, size: 42))
-                    .padding()
-                Button {
-                    navigationManager.path.append(.levelView)
-                } label: {
-                    Text("スタート")
-                        .modifier(ButtonModifier(foregroundColor: .white, backgroundColor: Asset.Colors.startColor.swiftUIColor))
+            ZStack {
+                Asset.Colors.bakcgroundColor.swiftUIColor
+                    .ignoresSafeArea()
+                VStack {
+                    Text("SwiftUIクイズ")
+                        .font(.custom(FontFamily.Caprasimo.regular, size: 42))
+                        .padding()
+                    Button {
+                        navigationManager.path.append(.levelView)
+                    } label: {
+                        Text("スタート")
+                            .modifier(ButtonModifier(foregroundColor: .white, backgroundColor: Asset.Colors.startColor.swiftUIColor))
+                    }
                 }
             }
             .onAppear {
@@ -40,10 +44,6 @@ struct HomeView: View {
                     ScoreView(quizManager: quizManager, googleMobileAdsManager: googleMobileAdsManager)
                 }
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(
-                Asset.Colors.bakcgroundColor.swiftUIColor
-            )
         }
     }
 }

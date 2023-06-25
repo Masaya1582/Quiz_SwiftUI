@@ -13,16 +13,20 @@ struct LevelView: View {
     @EnvironmentObject var navigationManager: NavigationManager
 
     var body: some View {
-        VStack(spacing: 42) {
-            Text("難易度を選択")
-                .font(.custom(FontFamily.Caprasimo.regular, size: 42))
-            ForEach(1..<4) { index in
-                Button {
-                    quizManager.selectLevel = index
-                    navigationManager.path.append(.quizView)
-                } label: {
-                    Text("レベル\(index)")
-                        .modifier(ButtonModifier(foregroundColor: .white, backgroundColor: index == 1 ? Asset.Colors.levelOneColor.swiftUIColor : index == 2 ? Asset.Colors.levelTwoColor.swiftUIColor : Asset.Colors.levelThreeColor.swiftUIColor))
+        ZStack {
+            Asset.Colors.bakcgroundColor.swiftUIColor
+                .ignoresSafeArea()
+            VStack(spacing: 42) {
+                Text("難易度を選択")
+                    .font(.custom(FontFamily.Caprasimo.regular, size: 42))
+                ForEach(1..<4) { index in
+                    Button {
+                        quizManager.selectLevel = index
+                        navigationManager.path.append(.quizView)
+                    } label: {
+                        Text("レベル\(index)")
+                            .modifier(ButtonModifier(foregroundColor: .white, backgroundColor: index == 1 ? Asset.Colors.levelOneColor.swiftUIColor : index == 2 ? Asset.Colors.levelTwoColor.swiftUIColor : Asset.Colors.levelThreeColor.swiftUIColor))
+                    }
                 }
             }
         }
@@ -31,10 +35,6 @@ struct LevelView: View {
             googleMobileAdsManager.addBannerViewToView(googleMobileAdsManager.bannerView)
         }
         .navigationBarBackButtonHidden(true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(
-            Asset.Colors.bakcgroundColor.swiftUIColor
-        )
     }
 }
 

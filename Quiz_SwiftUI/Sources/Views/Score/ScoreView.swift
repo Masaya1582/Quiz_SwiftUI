@@ -14,35 +14,35 @@ struct ScoreView: View {
     @State private var shareManager = QuizResultShareManager()
 
     var body: some View {
-        VStack(spacing: 42) {
-            Text("\(quizManager.correctCount)問正解")
-                .font(.custom(FontFamily.Caprasimo.regular, size: 42))
+        ZStack {
+            Asset.Colors.bakcgroundColor.swiftUIColor
+                .ignoresSafeArea()
+            VStack(spacing: 42) {
+                Text("\(quizManager.correctCount)問正解")
+                    .font(.custom(FontFamily.Caprasimo.regular, size: 42))
+                    .padding()
+                Button {
+                    shareManager.shareApp("\(quizManager.correctCount)問正解しました, #クイズアプリ")
+                } label: {
+                    Text("結果をシェアする")
+                        .modifier(ButtonModifier(foregroundColor: .black, backgroundColor: .white))
+                }
                 .padding()
-            Button {
-                shareManager.shareApp("\(quizManager.correctCount)問正解しました, #クイズアプリ")
-            } label: {
-                Text("結果をシェアする")
-                    .modifier(ButtonModifier(foregroundColor: .black, backgroundColor: .white))
+                Button {
+                    navigationManager.path.removeAll()
+                    quizManager.initializeQuizData()
+                } label: {
+                    Text("トップに戻る")
+                        .modifier(ButtonModifier(foregroundColor: .black, backgroundColor: .white))
+                }
+                .padding()
             }
-            .padding()
-            Button {
-                navigationManager.path.removeAll()
-                quizManager.initializeQuizData()
-            } label: {
-                Text("トップに戻る")
-                    .modifier(ButtonModifier(foregroundColor: .black, backgroundColor: .white))
-            }
-            .padding()
         }
         .onAppear {
             googleMobileAdsManager.setupBannerView()
             googleMobileAdsManager.addBannerViewToView(googleMobileAdsManager.bannerView)
         }
         .navigationBarBackButtonHidden(true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(
-            Asset.Colors.bakcgroundColor.swiftUIColor
-        )
     }
 
 }
