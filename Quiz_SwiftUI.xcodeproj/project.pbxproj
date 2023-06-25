@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4073FFF32A4803AE0080F40C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4073FFF22A4803AE0080F40C /* GoogleService-Info.plist */; };
 		40A6ABA32A47F99C00D8B481 /* Quiz_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A6ABA22A47F99C00D8B481 /* Quiz_SwiftUIApp.swift */; };
 		40A6ABA52A47F99C00D8B481 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A6ABA42A47F99C00D8B481 /* HomeView.swift */; };
 		40A6ABA72A47F99E00D8B481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A6ABA62A47F99E00D8B481 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		10B0634A71321D5BDC1AF9DC /* Pods-Quiz_SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiz_SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-Quiz_SwiftUI/Pods-Quiz_SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		4073FFF22A4803AE0080F40C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		40A6AB9F2A47F99C00D8B481 /* Quiz_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A6ABA22A47F99C00D8B481 /* Quiz_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz_SwiftUIApp.swift; sourceTree = "<group>"; };
 		40A6ABA42A47F99C00D8B481 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				40A6ABA62A47F99E00D8B481 /* Assets.xcassets */,
 				40A6ABDA2A47FD0C00D8B481 /* Colors.xcassets */,
 				40A6ABDC2A47FD1A00D8B481 /* Localizable.strings */,
+				4073FFF22A4803AE0080F40C /* GoogleService-Info.plist */,
 				40A6ABDE2A47FD2500D8B481 /* Font */,
 			);
 			path = Resources;
@@ -330,6 +333,7 @@
 				40A6ABAA2A47F99E00D8B481 /* Preview Assets.xcassets in Resources */,
 				40A6ABE22A47FE4F00D8B481 /* Caprasimo-Regular.ttf in Resources */,
 				40A6ABDD2A47FD1A00D8B481 /* Localizable.strings in Resources */,
+				4073FFF32A4803AE0080F40C /* GoogleService-Info.plist in Resources */,
 				40A6ABA72A47F99E00D8B481 /* Assets.xcassets in Resources */,
 				40A6ABDB2A47FD0C00D8B481 /* Colors.xcassets in Resources */,
 			);
