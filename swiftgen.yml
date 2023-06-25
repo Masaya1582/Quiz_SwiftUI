@@ -1,0 +1,17 @@
+xcassets:
+  inputs:
+     - Quiz_SwiftUI/Resources/Assets.xcassets
+     - Quiz_SwiftUI/Resources/Colors.xcassets
+  outputs:
+    templateName: swift5
+    output: Quiz_SwiftUI/Generated/Assets.swift
+strings:
+  inputs: Quiz_SwiftUI/Resources/Localizable.strings
+  outputs:
+    templateName: structured-swift5
+    output: Quiz_SwiftUI/Generated/LocalizableStrings.swift
+fonts:
+  inputs: Quiz_SwiftUI/Resources/Font
+  outputs:
+    templateName: swift5
+    output: Quiz_SwiftUI/Generated/Fonts.swift
