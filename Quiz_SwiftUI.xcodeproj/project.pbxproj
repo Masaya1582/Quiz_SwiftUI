@@ -11,14 +11,18 @@
 		40A6ABA52A47F99C00D8B481 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A6ABA42A47F99C00D8B481 /* ContentView.swift */; };
 		40A6ABA72A47F99E00D8B481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A6ABA62A47F99E00D8B481 /* Assets.xcassets */; };
 		40A6ABAA2A47F99E00D8B481 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A6ABA92A47F99E00D8B481 /* Preview Assets.xcassets */; };
+		F27BCC01EFE92FEA0A0555C1 /* Pods_Quiz_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56CD7C1CCC973FC17F29A1E /* Pods_Quiz_SwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10B0634A71321D5BDC1AF9DC /* Pods-Quiz_SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiz_SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-Quiz_SwiftUI/Pods-Quiz_SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		40A6AB9F2A47F99C00D8B481 /* Quiz_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A6ABA22A47F99C00D8B481 /* Quiz_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz_SwiftUIApp.swift; sourceTree = "<group>"; };
 		40A6ABA42A47F99C00D8B481 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40A6ABA62A47F99E00D8B481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40A6ABA92A47F99E00D8B481 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B56CD7C1CCC973FC17F29A1E /* Pods_Quiz_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quiz_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B928272193ED83E9E92CDAA2 /* Pods-Quiz_SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quiz_SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Quiz_SwiftUI/Pods-Quiz_SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27BCC01EFE92FEA0A0555C1 /* Pods_Quiz_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +42,8 @@
 			children = (
 				40A6ABA12A47F99C00D8B481 /* Quiz_SwiftUI */,
 				40A6ABA02A47F99C00D8B481 /* Products */,
+				8C00D49E11BD7167B1B053C3 /* Pods */,
+				5AEA0DF0DDE1115538B08BA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5AEA0DF0DDE1115538B08BA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B56CD7C1CCC973FC17F29A1E /* Pods_Quiz_SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C00D49E11BD7167B1B053C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B928272193ED83E9E92CDAA2 /* Pods-Quiz_SwiftUI.debug.xcconfig */,
+				10B0634A71321D5BDC1AF9DC /* Pods-Quiz_SwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40A6ABAD2A47F99E00D8B481 /* Build configuration list for PBXNativeTarget "Quiz_SwiftUI" */;
 			buildPhases = (
+				B6370378F2B320FC290349C5 /* [CP] Check Pods Manifest.lock */,
 				40A6AB9B2A47F99C00D8B481 /* Sources */,
 				40A6AB9C2A47F99C00D8B481 /* Frameworks */,
 				40A6AB9D2A47F99C00D8B481 /* Resources */,
+				40A6ABB02A47FAF600D8B481 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,6 +157,50 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40A6ABB02A47FAF600D8B481 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\n  swiftlint autocorrect --format # 自動修正の有効化\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B6370378F2B320FC290349C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quiz_SwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		40A6AB9B2A47F99C00D8B481 /* Sources */ = {
@@ -195,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +319,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -261,6 +331,7 @@
 		};
 		40A6ABAE2A47F99E00D8B481 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B928272193ED83E9E92CDAA2 /* Pods-Quiz_SwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -273,8 +344,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,14 +352,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.masa4y44-.masaya.nakakuki.Quiz-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		40A6ABAF2A47F99E00D8B481 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10B0634A71321D5BDC1AF9DC /* Pods-Quiz_SwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,8 +376,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +384,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.masa4y44-.masaya.nakakuki.Quiz-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
