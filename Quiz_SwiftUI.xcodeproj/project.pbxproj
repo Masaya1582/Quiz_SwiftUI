@@ -278,6 +278,7 @@
 				40A6AB9C2A47F99C00D8B481 /* Frameworks */,
 				40A6AB9D2A47F99C00D8B481 /* Resources */,
 				40A6ABB02A47FAF600D8B481 /* ShellScript */,
+				033F5FD416938CD54CA2759C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -342,6 +343,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		033F5FD416938CD54CA2759C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quiz_SwiftUI/Pods-Quiz_SwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quiz_SwiftUI/Pods-Quiz_SwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quiz_SwiftUI/Pods-Quiz_SwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		40A6ABB02A47FAF600D8B481 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;

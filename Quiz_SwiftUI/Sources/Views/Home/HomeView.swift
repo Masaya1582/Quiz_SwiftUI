@@ -17,7 +17,7 @@ struct HomeView: View {
         NavigationStack(path: $navigationManager.path) {
             VStack {
                 Text("SwiftUIクイズ")
-                    .font(.custom(FontFamily.Rubik.boldItalic, size: 42))
+                    .font(.custom(FontFamily.Caprasimo.regular, size: 42))
                     .padding()
                 Button {
                     navigationManager.path.append(.levelView)

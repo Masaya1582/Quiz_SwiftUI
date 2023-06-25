@@ -16,7 +16,7 @@ struct QuizView: View {
         VStack {
             Spacer()
             Text("第\(quizManager.quizCount + 1)問")
-                .font(.custom(FontFamily.Rubik.boldItalic, size: 42))
+                .font(.custom(FontFamily.Caprasimo.regular, size: 42))
                 .padding(.vertical, 5)
             TextEditor(text: $quizManager.currentQuizData.question)
                 .disabled(true) // テキスト編集を不可能にする
@@ -26,7 +26,7 @@ struct QuizView: View {
                 .frame(height: UIScreen.main.bounds.height / 13)
                 .lineSpacing(5)
                 .padding()
-                .font(.custom(FontFamily.Rubik.mediumItalic, size: 20))
+                .font(.custom(FontFamily.Caprasimo.regular, size: 20))
             ForEach(quizManager.currentQuizData.choice, id: \.self) { choice in
                 Button {
                     quizManager.judgeAnswer(choice)

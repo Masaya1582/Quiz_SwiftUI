@@ -16,7 +16,7 @@ struct ScoreView: View {
     var body: some View {
         VStack(spacing: 42) {
             Text("\(quizManager.correctCount)問正解")
-                .font(.custom(FontFamily.Rubik.boldItalic, size: 42))
+                .font(.custom(FontFamily.Caprasimo.regular, size: 42))
                 .padding()
             Button {
                 shareManager.shareApp("\(quizManager.correctCount)問正解しました, #クイズアプリ")

@@ -15,7 +15,7 @@ struct LevelView: View {
     var body: some View {
         VStack(spacing: 42) {
             Text("難易度を選択")
-                .font(.custom(FontFamily.Rubik.boldItalic, size: 42))
+                .font(.custom(FontFamily.Caprasimo.regular, size: 42))
             ForEach(1..<4) { index in
                 Button {
                     quizManager.selectLevel = index
