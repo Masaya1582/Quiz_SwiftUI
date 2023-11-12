@@ -21,7 +21,7 @@ protocol QuizViewModelType: AnyObject {
     var outputs: QuizViewModelOutputs { get }
 }
 
-class QuizViewModel: QuizViewModelType, QuizViewModelInputs, QuizViewModelOutputs {
+final class QuizViewModel: QuizViewModelType, QuizViewModelInputs, QuizViewModelOutputs {
 
     var inputs: QuizViewModelInputs { return self }
     var outputs: QuizViewModelOutputs { return self }
